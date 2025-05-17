@@ -1,0 +1,36 @@
+<div class="cart-container">
+    <h2>🛒 My Cart</h2>
+
+    <div *ngFor="let item of cartItems; let i = index" class="cart-item">
+        <div class="item-details">
+            
+            <img [src]="item.image || 'assets/custompizza.png'" alt="{{ item.name }}">
+            <div class="item-info">
+                <h4>{{ item.name }}</h4>
+                <p class="toppings"><strong>Toppings:</strong> {{ getToppingsList(item) }}</p>
+                <p class="price">₹{{ item.price * item.quantity }}</p>
+            </div>
+        </div>
+
+        <div class="quantity-controls">
+            <button (click)="decreaseQuantity(i)">-</button>
+            <span>{{ item.quantity }}</span>
+            <button (click)="increaseQuantity(i)">+</button>
+        </div>
+
+        <button class="remove-btn" (click)="removeItem(i)">🗑</button>
+    </div>
+
+    <div class="cart-summary">
+        <div class="coupon-section">
+            <input type="text" placeholder="Coupon Code">
+            <button class="apply-coupon">Apply Coupon →</button>
+        </div>
+
+        <div class="cart-total">
+            <p><strong>Subtotal:</strong> ₹{{ totalPrice }}</p>
+            <p><strong>Total:</strong> ₹{{ totalPrice }}</p>
+            <button class="checkout-btn" routerLink="/checkout">Proceed To Checkout →</button>
+        </div>
+    </div>
+</div>

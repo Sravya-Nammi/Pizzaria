@@ -1,0 +1,60 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.topping-container {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.topping-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.topping-name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.topping-price {
+    font-size: 18px;
+    color: #444;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.confirm-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+}

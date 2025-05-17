@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+   
+    <a class="navbar-brand d-flex align-items-center" routerLink="/">
+      <img src="assets/logo-small.png" alt="Pizzeria Logo" class="logo">
+      <span class="brand-text">Pizzeria</span>
+    </a>
+
+   
+    <div class="navbar-nav">
+      <a class="nav-link" routerLink="/menu">Order Pizza</a>
+      <a class="nav-link" routerLink="/build-your-pizza">Build Ur Pizza</a>
+    </div>
+
+    
+    <div class="ms-auto">
+      <a class="btn cart-btn" routerLink="/cart">🛒 Shopping Cart</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

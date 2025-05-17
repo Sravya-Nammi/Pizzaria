@@ -1,0 +1,165 @@
+.cart-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap; 
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1; 
+}
+
+.item-details img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.item-info h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.toppings {
+    font-size: 14px;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px; 
+}
+
+.quantity-controls button {
+    background: #ffcc00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background: black;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #ffcc00;
+}
+
+.remove-btn:hover {
+    color: black;
+}
+
+.cart-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    height: 250px; 
+}
+
+.coupon-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    margin-top: auto; 
+    width: 50%; 
+}
+
+.coupon-section input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 250px; 
+}
+
+.apply-coupon {
+    background: #ffcc00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; 
+}
+
+.apply-coupon:hover {
+    background: black;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: auto; 
+    width: 100%; 
+}
+
+.cart-total p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.checkout-btn {
+    background: #ffcc00;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checkout-btn:hover {
+    background: black;
+}
